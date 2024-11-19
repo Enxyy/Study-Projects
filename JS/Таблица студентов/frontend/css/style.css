@@ -1,0 +1,9 @@
+html {
+  box-sizing: border-box;
+}
+
+.btn-danger {
+  margin-top: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}

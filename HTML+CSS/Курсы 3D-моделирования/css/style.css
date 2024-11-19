@@ -1,0 +1,389 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url(../fonts/RobotoBold.woff2) format(woff2);
+  src: url(../fonts/RobotoBold.woff) format(woff);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url(../fonts/RobotoLight.woff2) format(woff2);
+  src: url(../fonts/RobotoLight.woff) format(woff);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url(../fonts/RobotoMedium.woff2) format(woff2);
+  src: url(../fonts/RobotoMedium.woff) format(woff);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url(../fonts/RobotoRegular.woff2) format(woff2);
+  src: url(../fonts/RobotoRegular.woff) format(woff);
+}
+
+@font-face {
+  font-family: "Muller";
+  font-weight: 700;
+  src: url(../fonts/MullerBold.woff2) format(woff2);
+  src: url(../fonts/MullerBold.woff) format(woff);
+}
+
+@font-face {
+  font-family: "Muller";
+  font-weight: 300;
+  src: url(../fonts/MullerLight.woff2) format(woff2);
+  src: url(../fonts/MullerLight.woff) format(woff);
+}
+
+@font-face {
+  font-family: "Muller";
+  font-weight: 500;
+  src: url(../fonts/MullerMedium.woff2) format(woff2);
+  src: url(../fonts/MullerMedium.woff) format(woff);
+}
+
+@font-face {
+  font-family: "Muller";
+  font-weight: 400;
+  src: url(../fonts/MullerRegular.woff2) format(woff2);
+  src: url(../fonts/MullerRegular.woff) format(woff);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  max-width: 100vw;
+  font-family: "Roboto", "Muller";
+  background-color: #fff;
+}
+
+/* glob */
+.visually-hidden {
+  position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+
+.section__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #2e2b44;
+}
+
+.btn {
+  padding: 24px 75.5px;
+  border: 1px solid #3f2aff;
+  border-radius: 20px;
+  background-color: #3f2aff;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* header */
+.header {
+  padding: 30px 0;
+  height: 80px;
+  background-color: #3f2aff;
+}
+
+.header__container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  align-items: center;
+}
+
+.header__content {
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header__bottom {
+  justify-content: flex-end;
+}
+
+.nav__list {
+  justify-content: flex-end;
+  gap: 57px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* hero */
+.hero {
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, rgb(85, 86, 129) 0%, rgb(33, 33, 51) 100%);
+}
+
+.hero__container {
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
+
+.hero__content {
+  padding-top: 115px;
+}
+
+.hero__title {
+  font-size: 60px;
+  color: #fff;
+  line-height: 100%;
+}
+
+.hero__descr {
+  margin: 0;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+
+/* advantages */
+.advantages__img {
+  padding-top: 22px;
+}
+
+.advantages__title {
+  margin-bottom: 18px;
+}
+
+.advantages__descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666;
+}
+
+.advantages__top {
+  margin-bottom: 23px;
+}
+
+.advantages__item {
+  padding: 10.5px 0;
+  padding-left: 110px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+}
+
+.advantages__caption {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #666;
+}
+
+.advantages__item--1 {
+  background-image: url(../img/adv1.svg);
+}
+
+.advantages__item--2 {
+  background-image: url(../img/adv2.svg);
+}
+
+.advantages__item--3 {
+  background-image: url(../img/adv3.svg);
+}
+
+/* teachers */
+.teachers {
+  background: #212133;
+}
+
+.teachers__container {
+  padding-top: 74px;
+  padding-bottom: 73px;
+}
+
+.teachers__title {
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.teachers__item img {
+  margin-bottom: 27px;
+}
+
+.teachers__item__title {
+  margin: 0;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.teachers__item__descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #85859b;
+}
+
+/* courses */
+.courses__container {
+  padding-top: 74px;
+  padding-bottom: 50px;
+}
+
+.courses__title {
+  margin-bottom: 24px;
+}
+
+.courses__item {
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  min-height: 480px;
+  border-radius: 20px;
+  background-color: #edf0f9;
+}
+
+.courses__content {
+  flex-grow: 1;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.courses__subtitle {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #212133;
+}
+
+.courses__descr {
+  margin: 0;
+  margin-bottom: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666;
+}
+
+.courses__btn {
+  padding: 19.5px 58px;
+  font-size: 16px;
+}
+
+.courses__time {
+  position: absolute;
+  top: 10px;
+  right: 4px;
+  padding-left: 29px;
+  background-image: url(../img/time.svg);
+  background-position: left center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.courses__mgb {
+  margin-bottom: 30px;
+}
+
+/* footer */
+.footer__container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer__top {
+  padding: 30px 0;
+  margin-bottom: 3px;
+  background-color: #2e2b44;
+}
+
+.social {
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+}
+
+.footer__copy {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #2e2b44;
+}
+
+.footer__copy span {
+  color: #3f2aff;
+}

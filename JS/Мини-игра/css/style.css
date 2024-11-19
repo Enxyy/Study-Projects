@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  padding-top: 25px;
+}
+
+.game__card {
+  display: flex;
+  height: 150px;
+  background-color: #ffc107;
+  border: 1px solid #6f42c1;
+  border-radius: 15px;
+  color: #ffc107;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  user-select: none;
+}
+
+.card-flipped {
+  pointer-events: none;
+  background-color: #fff;
+}
+
+
